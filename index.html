@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KAGO Prototype</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="app">
+        <div id="page1" class="page" hidden>
+            <img id="kagoimg" src="images\face.jpeg" width="500" height="500" alt="">
+        </div>
+        <div id="page2" class="page">
+            <h1>Log in</h1>
+            <input type="email" name="email" id="email" placeholder="Email">
+            <input type="password" name="password" id="password" placeholder="Password">
+            <button onclick="gotoPage3();">Log in</button>
+            <a href="#">Don't have an account ?</a>
+            <div id="social">
+                <img src="images/facebook icon.png" width="100px" height="100px" alt="">
+                <img src="images/google icon.png" width="100px" height="100px" alt="">
+            </div>
+        </div>
+        <div id="page3" class="page" hidden>
+            <h1>Welcome to KAGO</h1>
+        </div>
+        <div id="page4" class="page" hidden>
+            <div id="dep">
+                <p>Shop by department</p>
+                <div>
+                    <div onclick="gotoPage5();"><img src="images/living roam.jpeg" alt="">
+                        <p>Living Room</p>
+                    </div>
+                    <div><img src="images/bed roam.jpeg" alt="">
+                        <p>Bed Room</p>
+                    </div>
+                    <div><img src="images/kitchen.jpeg" alt="">
+                        <p>Kitchen</p>
+                    </div>
+                </div>
+            </div>
+
+            <div id="trend">
+                <p>Trending Videos</p>
+                <div>
+                    <div><img src="images/trending.jpeg" alt="">
+                        <p></p>
+                    </div>
+                    <div><img src="images/trending1.jpeg" alt="">
+                        <p></p>
+                    </div>
+                    <div><img src="images/trending2.jpeg" alt="">
+                        <p></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="page5" class="page">
+            <div onclick="gotoPage6();"><img src="images/table.jpeg" alt="">
+                <div>
+                    <p>Table</p>
+                    <p>20$</p>
+                </div>
+            </div>
+            <div><img src="images/chair.jpeg" alt="">
+                <div>
+                    <p>Chair</p>
+                    <p>5$</p>
+                </div>
+            </div>
+            <div><img src="images/sofa.jpeg" alt="">
+                <div>
+                    <p>Sofa</p>
+                    <p>50$</p>
+                </div>
+            </div>
+        </div>
+        <div id="page6" class="page">
+            <img src="images/table.jpeg" alt="">
+            <p>Table</p>
+            <p>Price : 20$</p>
+            <div><button>Custom-made</button><button>Buy</button></div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
